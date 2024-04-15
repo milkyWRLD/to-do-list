@@ -1,0 +1,207 @@
+/*===== GOOGLE FONTS =====*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+/*===== VARIABLES CSS =====*/
+:root {
+	/*===== Colors =====*/
+	--first-color: #9d4bff;
+	--first-color-dark: #23004d;
+	--first-color-light: #a49eac;
+	--first-color-lighten: #f2f2f2;
+
+	/*===== Font and typography =====*/
+	--body-font: 'Open Sans', sans-serif;
+	--h1-font-size: 1.5rem;
+	--normal-font-size: 0.938rem;
+	--small-font-size: 0.813rem;
+}
+
+@media screen and (min-width: 768px) {
+	:root {
+		--normal-font-size: 1rem;
+		--small-font-size: 0.875rem;
+	}
+}
+
+/*===== BASE =====*/
+*,
+::before,
+::after {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: var(--body-font);
+	font-size: var(--normal-font-size);
+	color: var(--first-color-dark);
+}
+
+h1 {
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+/*===== HEADER =====*/
+.header {
+	background-color: var(
+		--first-color
+	); /* Установка фонового цвета согласно переменной */
+	color: var(--first-color-lighten);
+	padding: 20px 0;
+	border-radius: 20px; /* Закругление краев */
+	text-align: center; /* Выравнивание содержимого по центру */
+	width: 100%; /* Ширина header равна ширине экрана */
+	max-width: 800px;
+	max-height: 11100px; /* Максимальная ширина header */
+	margin: 0 auto; /* Выравнивание по центру */
+	margin-bottom: 20px; /* Расстояние между header и контентом */
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.header__inner {
+	display: flex;
+	justify-content: center; /* Выравнивание по центру */
+	align-items: center; /* Выравнивание по центру */
+	flex-direction: column; /* Расположение элементов в столбец */
+}
+
+.header__logo {
+	font-size: 24px;
+	margin: 0;
+}
+
+.header__menu {
+	display: flex;
+}
+
+.header__list {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+}
+
+.header__item {
+	margin-left: 20px;
+}
+
+.header__link {
+	color: white;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+.header__link:hover {
+	color: var(--first-color-light);
+}
+
+/*===== TASK PLANNER =====*/
+.task-planner {
+	display: flex;
+	flex-direction: column; /* Расположение элементов в столбец */
+	justify-content: center; /* Выравнивание по центру */
+	align-items: center; /* Выравнивание по центру */
+	height: 120vh;
+	margin: 0;
+	padding: 0;
+	background-color: var(
+		--first-color-lighten
+	); /* Цвет фона, указанный в переменной */
+}
+
+.task-planner__content {
+	display: flex;
+	flex-direction: column; /* Расположение элементов в столбец */
+	justify-content: center; /* Выравнивание по центру */
+	align-items: center; /* Выравнивание по центру */
+	padding: 2rem;
+	width: 100%;
+	max-width: 600px; /* Максимальная ширина для контента */
+	margin-top: 20px; /* Добавленный отступ сверху */
+}
+
+.task-planner__form {
+	width: 100%;
+	max-width: 400px; /* Ширина формы, согласованная с шириной формы авторизации */
+	margin-bottom: 2rem;
+}
+
+.task-planner__input {
+	width: 100%;
+	padding: 1rem;
+	margin-bottom: 1rem;
+	border: none;
+	border-radius: 0.5rem;
+	outline: none;
+	font-size: var(--normal-font-size);
+	font-weight: 700;
+	color: var(--first-color-dark);
+	background-color: white; /* Фоновый цвет, соответствующий стилю авторизации */
+}
+
+.task-planner__input::placeholder {
+	font-size: var(--normal-font-size);
+	font-family: var(--body-font);
+	color: var(--first-color-light);
+}
+
+.task-planner__button {
+	width: 100%;
+	padding: 1rem;
+	background-color: var(--first-color);
+	color: #fff;
+	font-weight: 600;
+	text-align: center;
+	border: none;
+	border-radius: 0.5rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+	margin-bottom: 2rem; /* Расстояние до следующего элемента */
+}
+
+.task-planner__button:hover {
+	background-color: var(--first-color-dark);
+}
+
+.task-planner__tabs {
+	display: flex;
+	flex-direction: column; /* Расположение элементов в столбец */
+	justify-content: center; /* Выравнивание по центру */
+	align-items: center; /* Выравнивание по центру */
+	width: 100%;
+	max-width: 400px; /* Максимальная ширина для категорий */
+}
+
+.task-planner__tabs .tab {
+	width: 100%;
+	padding: 1.5rem;
+	margin-bottom: 1rem;
+	border-radius: 0.5rem;
+	color: white;
+	background-color: var(
+		--first-color
+	); /* Фоновый цвет, соответствующий стилю авторизации */
+	cursor: pointer;
+	transition: background-color 0.3s;
+	text-align: center; /* Выравнивание по центру */
+}
+
+.task-planner__tabs .tab:hover {
+	background-color: var(--first-color-dark);
+}

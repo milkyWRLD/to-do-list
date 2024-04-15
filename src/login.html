@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/login-style.css"" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<title>Artsid website - Вход/Регистрация</title>
+	</head>
+	<body>
+		<div class="login">
+			<div class="login__content">
+				<div class="login__img">
+					<img src="img/img-login.svg" alt="" />
+				</div>
+				<div class="login__forms">
+					<form action="" class="login__registre" id="login-in">
+						<h1 class="login__title">Войти</h1>
+						<div class="login__box">
+							<i class="bx bx-user login__icon"></i>
+							<input
+								type="text"
+								name="username"
+								placeholder="Имя"
+								class="login__input"
+								id="login-username"
+							/>
+						</div>
+						<div class="login__box">
+							<i class="bx bx-lock-alt login__icon"></i>
+							<input
+								type="password"
+								name="password"
+								placeholder="Пароль"
+								class="login__input"
+								id="login-password"
+							/>
+						</div>
+						<input type="submit" value="Войти" class="login__button" />
+						<div>
+							<span class="login__account">У вас нет учетной записи?</span>
+							<span class="login__signin" id="sign-up">Зарегистрироваться</span>
+						</div>
+					</form>
+					<form action="" class="login__create none" id="login-up">
+						<h1 class="login__title">Создать аккаунт</h1>
+						<div class="login__box">
+							<i class="bx bx-user login__icon"></i>
+							<input
+								type="text"
+								name="username"
+								placeholder="Имя"
+								class="login__input"
+								id="register-username"
+							/>
+						</div>
+						<div class="login__box">
+							<i class="bx bx-lock-alt login__icon"></i>
+							<input
+								type="password"
+								name="password"
+								placeholder="Пароль"
+								class="login__input"
+								id="register-password"
+							/>
+						</div>
+						<input
+							type="submit"
+							value="Создать аккаунт"
+							class="login__button"
+						/>
+						<div>
+							<span class="login__account">У вас уже есть аккаунт?</span>
+							<span class="login__signup" id="sign-in">Войти</span>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<div class="notifications">
+			<div class="notification" id="login-notification">
+				Уведомление о входе/регистрации
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+	</body>
+</html>

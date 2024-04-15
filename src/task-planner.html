@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/task-planner-style.css" />
+		<!-- Подключаем таблицу стилей -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<!-- Подключаем иконки -->
+		<title>Планировщик задач</title>
+		<!-- Заголовок страницы -->
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__inner">
+					<h1 class="header__logo">Artsid</h1>
+					<nav class="header__menu">
+						<ul class="header__list">
+							<li class="header__item">
+								<a href="#" class="header__link">Кол-во задач</a>
+							</li>
+							<li class="header__item">
+								<a href="#" class="header__link">Выйти</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</header>
+		<div class="task-planner">
+			<!-- Контейнер для планировщика задач -->
+			<div class="task-planner__content">
+				<!-- Заголовок -->
+				<form action="" class="task-planner__form" id="task-form">
+					<!-- Форма для добавления задачи -->
+					<input
+						type="text"
+						placeholder="Новая задача"
+						class="task-planner__input"
+						id="new-task"
+					/>
+					<!-- Поле ввода новой задачи -->
+					<button class="task-planner__button">Добавить задачу</button>
+					<!-- Кнопка добавления задачи -->
+				</form>
+				<div class="task-planner__tabs">
+					<!-- Контейнер для вкладок категорий -->
+					<div class="tab" data-category="urgent">Срочное</div>
+					<div class="tab" data-category="work">Работа</div>
+					<div class="tab" data-category="education">Образование</div>
+					<div class="tab" data-category="personal">Личное</div>
+					<div class="tab" data-category="home">Домашние дела</div>
+					<div class="tab" data-category="hobby">Хобби и отдых</div>
+					<div class="tab" data-category="travel">Локации и путешествия</div>
+					<div class="tab" data-category="sport">Спорт</div>
+				</div>
+				<div class="task-planner__tasks">
+					<!-- Контейнер для задач по выбранной категории -->
+					<!-- Здесь будут отображаться задачи из JavaScript -->
+				</div>
+			</div>
+		</div>
+		<script src="js/main.js"></script>
+		<!-- Подключаем JavaScript файл -->
+		<div class="notification" id="task-notification">
+			<!-- Уведомление о добавлении задачи -->
+			Уведомление о добавлении задачи
+		</div>
+	</body>
+</html>
