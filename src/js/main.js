@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 		document.getElementById('login-in').classList.add('none')
 	}
 
-	// Обработчик события для кнопки "Зарегистрироваться"
+	// Обработчик события для кнопки "Зарегистрироваться" на странице авторизации
 	document.getElementById('sign-up').addEventListener('click', event => {
 		event.preventDefault()
 		showRegisterForm()
@@ -139,5 +139,14 @@ document.addEventListener('DOMContentLoaded', () => {
 				taskNotification.textContent = ''
 			}, 2000)
 		}
+	})
+
+	// Обработчик события для кнопки "Выход"
+	document.querySelector('.header__logout').addEventListener('click', () => {
+		// Очищаем данные о текущем пользователе
+		localStorage.removeItem('currentUser')
+
+		// Перенаправляем на страницу входа
+		window.location.href = 'login.html'
 	})
 })

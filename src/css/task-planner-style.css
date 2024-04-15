@@ -62,8 +62,7 @@ img {
 	border-radius: 20px; /* Закругление краев */
 	text-align: center; /* Выравнивание содержимого по центру */
 	width: 100%; /* Ширина header равна ширине экрана */
-	max-width: 800px;
-	max-height: 11100px; /* Максимальная ширина header */
+	max-width: 800px; /* Максимальная ширина header */
 	margin: 0 auto; /* Выравнивание по центру */
 	margin-bottom: 20px; /* Расстояние между header и контентом */
 }
@@ -109,6 +108,31 @@ img {
 
 .header__link:hover {
 	color: var(--first-color-light);
+}
+
+/* Стили для отображения имени пользователя */
+.header__user {
+	font-size: 18px; /* Размер шрифта */
+	margin-top: 10px; /* Отступ сверху */
+}
+
+/* Стили для кнопки "Выход" */
+.header__logout {
+	background-color: var(--first-color); /* Цвет фона кнопки */
+	color: var(--first-color-lighten); /* Цвет текста кнопки */
+	border: none; /* Убираем границу */
+	border-radius: 5px; /* Закругляем углы */
+	padding: 10px 20px; /* Внутренние отступы */
+	cursor: pointer; /* Изменяем курсор при наведении */
+	transition: background-color 0.3s, color 0.3s; /* Плавное изменение цвета при наведении */
+	margin-top: 10px; /* Отступ сверху */
+}
+
+.header__logout:hover {
+	background-color: var(
+		--first-color-light
+	); /* Изменяем цвет фона при наведении */
+	color: white; /* Изменяем цвет текста при наведении */
 }
 
 /*===== TASK PLANNER =====*/

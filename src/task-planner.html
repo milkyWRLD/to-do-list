@@ -14,23 +14,16 @@
 		<!-- Заголовок страницы -->
 	</head>
 	<body>
-		<header class="header">
+		<div class="header">
 			<div class="container">
 				<div class="header__inner">
-					<h1 class="header__logo">Artsid</h1>
-					<nav class="header__menu">
-						<ul class="header__list">
-							<li class="header__item">
-								<a href="#" class="header__link">Кол-во задач</a>
-							</li>
-							<li class="header__item">
-								<a href="#" class="header__link">Выйти</a>
-							</li>
-						</ul>
-					</nav>
+					<h1 class="header__logo">Artsid website</h1>
+					<!-- Имя пользователя будет динамически заменяться на JavaScript -->
+					<div class="header__user" id="user-name">Имя пользователя</div>
+					<button id="logout-button" class="header__logout">Выход</button>
 				</div>
 			</div>
-		</header>
+		</div>
 		<div class="task-planner">
 			<!-- Контейнер для планировщика задач -->
 			<div class="task-planner__content">
